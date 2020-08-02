@@ -151,7 +151,7 @@ const parseInstantNum = ( str ) => {
 
 const parseUncertainArg = ( str ) => {
     str = str.trim();
-    if(str[0] === 'i') {
+    if(str[0] == 'i' || str[0] == 'I') {
         return parseInstantNum(str) % 65536;
     }
     else if(str[0] === 'l') {
